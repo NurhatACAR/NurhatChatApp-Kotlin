@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userImage"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nurhat Acar"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recentMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sohpet için dokunun." />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="60dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/logo" />
+</RelativeLayout>
